@@ -1,3 +1,9 @@
+/* This program was created by Zack Labaschin 
+   It is used to demonstrate converting a decimal vale into a binary value
+   The method to convert the int value is bitwise operations using masking
+   Please enjoy!
+*/
+
 #include <iostream>
 #include <cstdlib>
 
@@ -14,6 +20,7 @@ int main() {
 
   cout << "Now converting " << value << endl;
 
+  // the masking and updating of the array
   if((value & 0b001) != 0) {
     bitValue[0] = 1;
   }
